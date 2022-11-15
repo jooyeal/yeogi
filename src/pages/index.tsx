@@ -1,11 +1,17 @@
 import { type NextPage } from "next";
 import Head from "next/head";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import Container from "../components/Container";
+import Header from "../components/Header";
+import MoveSplash, { Direction } from "../components/MoveSplash";
+import useShowMoveSplash from "../hooks/useShowMoveSplash";
 import useSmoothNumber from "../hooks/useSmoothNumber";
-import { trpc } from "../utils/trpc";
+import spacingConvert from "../utils/spacingConvert";
 
 const Home: NextPage = () => {
   const { number, move } = useSmoothNumber();
+  const { isVisible, open } = useShowMoveSplash();
+  const [direction, setDirection] = useState<Direction>();
 
   return (
     <>
@@ -15,20 +21,61 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="relative h-screen w-screen overflow-hidden bg-black">
+        <Header
+          onClick={() => {
+            move({ w: 0, h: 0 });
+            setDirection("up");
+            open();
+          }}
+        />
         <div
           style={{
             transform: `translate(${-number.w}px, ${-number.h}px)`,
           }}
           className="h-screen4 w-screen4 text-white transition-all duration-1000"
         >
-          <button onClick={() => move({ w: 896, h: 896 })}>click</button>
-          <div className="absolute top-ex12 left-ex12 h-screen w-screen p-10">
-            <div className="h-full rounded-lg border p-10">
-              <button onClick={() => move({ w: 0, h: 0 })}>click</button>
+          <div className="h-screen w-screen pt-16">
+            <div className="flex h-screen flex-col justify-center gap-10 p-4">
+              <p className="text-8xl font-bold">여기누가 </p>
+              <p className="text-8xl font-bold">오자고 했냐...?</p>
+              <div className="flex justify-end">
+                <button
+                  className="h-12 w-40 rounded-lg border text-white"
+                  onClick={() => {
+                    move({
+                      w: spacingConvert("ex12"),
+                      h: spacingConvert("ex12"),
+                    });
+                    setDirection("rightdown");
+                    open();
+                  }}
+                >
+                  보러가기
+                </button>
+              </div>
             </div>
           </div>
+          <Container
+            w="left-ex12"
+            h="top-ex12"
+            onClick={() => {
+              move({ w: spacingConvert("ex6"), h: spacingConvert("ex24") });
+              setDirection("leftdown");
+              open();
+            }}
+          />
+          <Container
+            w="left-ex6"
+            h="top-ex24"
+            onClick={() => {
+              move({ w: spacingConvert("ex24"), h: spacingConvert("ex26") });
+              setDirection("rightdown");
+              open();
+            }}
+          />
+          <Container w="left-ex24" h="top-ex26" onClick={() => {}} />
         </div>
-        <canvas className="h-screen4 w-screen4"></canvas>
+        <MoveSplash open={isVisible} direction={direction} />
       </div>
     </>
   );

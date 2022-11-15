@@ -1,0 +1,70 @@
+import { SpacingValue } from "../components/Container";
+
+export default function (spacing: SpacingValue): number {
+  switch (spacing) {
+    case "ex1":
+      return 192;
+    case "ex2":
+      return 256;
+    case "ex3":
+      return 320;
+    case "ex4":
+      return 384;
+    case "ex5":
+      return 448;
+    case "ex6":
+      return 512;
+    case "ex7":
+      return 576;
+    case "ex8":
+      return 640;
+    case "ex9":
+      return 704;
+    case "ex10":
+      return 768;
+    case "ex11":
+      return 832;
+    case "ex12":
+      return 896;
+    case "ex13":
+      return 960;
+    case "ex14":
+      return 1024;
+    case "ex15":
+      return 1088;
+    case "ex16":
+      return 1152;
+    case "ex17":
+      return 1216;
+    case "ex18":
+      return 1280;
+    case "ex19":
+      return 1344;
+    case "ex20":
+      return 1408;
+    case "ex21":
+      return 1472;
+    case "ex22":
+      return 1536;
+    case "ex23":
+      return 1600;
+    case "ex24":
+      return 1664;
+    case "ex25":
+      return 1728;
+    case "ex26":
+      return 1796;
+    case "ex27":
+      return 1856;
+    case "ex28":
+      return 1920;
+    case "ex29":
+      return 1984;
+    case "ex30":
+      return 2048;
+    case "ex31":
+      return 2112;
+    case "ex32":
+      return 2176;
+  }
+}

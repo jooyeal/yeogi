@@ -5,8 +5,13 @@
 html {
   -ms-overflow-style: none;
   scrollbar-width: none;
+  font-family: "Jua", sans-serif;
 }
 
 html::-webkit-scrollbar {
   display: none;
+}
+
+.lottie-svg-class {
+  width: calc(max(900px, 100vw)) !important;
 }
