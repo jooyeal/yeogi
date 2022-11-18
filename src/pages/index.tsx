@@ -48,6 +48,21 @@ const Home: NextPage = () => {
           <Container
             w="left-ex12"
             h="top-ex12"
+            title="첫날 - 신바시"
+            desc="직장인들의 낙원"
+            image="/shinbashi_main.jpeg"
+            items={[
+              {
+                name: "신바시 우오킨",
+                url: "https://www.google.com/",
+                desc: "신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야",
+              },
+              {
+                name: "신바시 우오킨2",
+                url: "https://www.google.com/",
+                desc: "신바시의 명물 일본식 이자카야",
+              },
+            ]}
             onClickNext={() => {
               move({ w: spacingConvert("ex6"), h: spacingConvert("ex24") });
               setDirection("leftdown");
@@ -62,6 +77,21 @@ const Home: NextPage = () => {
           <Container
             w="left-ex6"
             h="top-ex24"
+            title="첫날 - 신바시"
+            desc="직장인들의 낙원"
+            image="/shinbashi_main.jpeg"
+            items={[
+              {
+                name: "신바시 우오킨",
+                url: "https://www.google.com/",
+                desc: "신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야",
+              },
+              {
+                name: "신바시 우오킨2",
+                url: "https://www.google.com/",
+                desc: "신바시의 명물 일본식 이자카야",
+              },
+            ]}
             onClickNext={() => {
               move({ w: spacingConvert("ex32"), h: spacingConvert("ex26") });
               setDirection("rightdown");
@@ -76,6 +106,21 @@ const Home: NextPage = () => {
           <Container
             w="left-ex32"
             h="top-ex26"
+            title="첫날 - 신바시"
+            desc="직장인들의 낙원"
+            image="/shinbashi_main.jpeg"
+            items={[
+              {
+                name: "신바시 우오킨",
+                url: "https://www.google.com/",
+                desc: "신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야",
+              },
+              {
+                name: "신바시 우오킨2",
+                url: "https://www.google.com/",
+                desc: "신바시의 명물 일본식 이자카야",
+              },
+            ]}
             onClickNext={() => {
               console.log("next");
             }}

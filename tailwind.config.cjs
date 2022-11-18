@@ -92,6 +92,10 @@ module.exports = {
       135: "135deg",
       180: "180deg",
     },
+    screens: {
+      mobile: { max: "820px" },
+      laptop: { min: "821px" },
+    },
   },
   plugins: [],
 };
