@@ -76,7 +76,9 @@ const Home: NextPage = () => {
           <Container
             w="left-ex32"
             h="top-ex26"
-            onClickNext={() => {}}
+            onClickNext={() => {
+              console.log("next");
+            }}
             onClickPrev={() => {
               move({ w: spacingConvert("ex6"), h: spacingConvert("ex24") });
               setDirection("leftup");
