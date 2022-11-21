@@ -36,7 +36,17 @@ export type SpacingValue =
   | "ex29"
   | "ex30"
   | "ex31"
-  | "ex32";
+  | "ex32"
+  | "ex33"
+  | "ex34"
+  | "ex35"
+  | "ex36"
+  | "ex37"
+  | "ex38"
+  | "ex39"
+  | "ex40"
+  | "ex41"
+  | "ex42";
 
 type Props = {
   w: string;
@@ -49,6 +59,7 @@ type Props = {
     url: string;
     desc: string;
   }[];
+  isLast?: boolean;
   onClickNext: () => void;
   onClickPrev: () => void;
 };
@@ -60,10 +71,11 @@ const Container: React.FC<Props> = ({
   image,
   desc,
   items,
+  isLast,
   onClickNext,
   onClickPrev,
 }) => {
-  const { ref, inView, entry } = useInView({
+  const { ref, inView } = useInView({
     threshold: 0,
     delay: 1000,
   });
@@ -79,12 +91,20 @@ const Container: React.FC<Props> = ({
           }
         >
           <div className="mb-2 flex justify-between">
-            <p className="cursor-pointer" onClick={onClickPrev}>
-              이전으로
+            <p
+              className="cursor-pointer rounded-lg border p-1"
+              onClick={onClickPrev}
+            >
+              이전
             </p>
-            <p className="cursor-pointer" onClick={onClickNext}>
-              다음으로
-            </p>
+            {!isLast && (
+              <p
+                className="cursor-pointer rounded-lg border p-1"
+                onClick={onClickNext}
+              >
+                다음
+              </p>
+            )}
           </div>
           <div>
             <div className="laptop:flex">

@@ -13,7 +13,6 @@ const Home: NextPage = () => {
   const { number, move } = useSmoothNumber();
   const { isVisible, open } = useShowMoveSplash();
   const [direction, setDirection] = useState<Direction>();
-
   return (
     <>
       <Head>
@@ -48,19 +47,19 @@ const Home: NextPage = () => {
           <Container
             w="left-ex12"
             h="top-ex12"
-            title="첫날 - 신바시"
-            desc="직장인들의 낙원"
+            title="Day 1 - 신바시"
+            desc="직장인들의 성지, 회사원들이 집에 돌아가기전에 들려서 한잔씩 하는 곳이다. 이자카야들이 즐비해있고, 특히 철로 밑에 위치해있는 이자카야는 특유의 분위기를 느낄 수 있다."
             image="/shinbashi_main.jpeg"
             items={[
               {
-                name: "신바시 우오킨",
-                url: "https://www.google.com/",
-                desc: "신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야",
+                name: "신바시 우오킨(魚金)",
+                url: "https://www.google.com/search?q=%E6%96%B0%E6%A9%8B%E9%AD%9A%E9%87%91&rlz=1C5CHFA_enJP1000JP1000&sxsrf=ALiCzsYZjhmrLexi_5L3G8X4gC5Zn955Aw:1669010049076&ei=aRJ7Y4fbDork2roPiYSe4As&ved=2ahUKEwjMzuf4yr77AhVAgFYBHdZXBb0QvS56BAgNEAE&uact=5&oq=%E6%96%B0%E6%A9%8B%E9%AD%9A%E9%87%91&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIECCMQJzIFCAAQgAQyBQgAEIAEMgUIABCABDILCC4QgAQQxwEQrwEyBQgAEIAEMgsILhCABBDHARCvATIFCAAQgAQyBQgAEIAEMgUIABCABDoOCC4QgAQQxwEQrwEQsAM6CwguEIAEEMcBENEDOg4ILhCABBDHARDRAxDUAjoOCC4QgAQQxwEQrwEQ1AI6BQguEIAEOggILhCABBDUAjoHCAAQgAQQCjoNCC4QgAQQxwEQrwEQCjoNCC4QgAQQxwEQ0QMQCjoHCC4QgAQQCjoKCC4QgAQQ1AIQCjoHCCMQ6gIQJ0oECEEYAUoECEYYAFCZCVjWQmDUQ2gIcAB4A4AB0QSIAasVkgELMC40LjIuMy4wLjGYAQCgAQGwAQrIAQHAAQE&sclient=gws-wiz-serp&tbs=lf:1,lf_ui:4&tbm=lcl&rflfq=1&num=10&rldimm=10422705187609580314&lqi=CgzmlrDmqYvprZrph5EiA4gBAUjoy_n_xquAgAhaIhABEAIYABgBGAIiDuaWsOapiyDprZog6YeRKgIIAjICamGSARJzZWFmb29kX3Jlc3RhdXJhbnSaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVUk5NRjlVUVhWQlJSQUKqAQ8QASoLIgfprZog6YeRKAg&sa=X&rlst=f#rlfi=hd:;si:10422705187609580314,l,CgzmlrDmqYvprZrph5EiA4gBAUjoy_n_xquAgAhaIhABEAIYABgBGAIiDuaWsOapiyDprZog6YeRKgIIAjICamGSARJzZWFmb29kX3Jlc3RhdXJhbnSaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVUk5NRjlVUVhWQlJSQUKqAQ8QASoLIgfprZog6YeRKAg;mv:[[35.717884999999995,139.76295600000003],[35.65071530000001,139.6974497]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!2m1!1e3!3sIAE,lf:1,lf_ui:4",
+                desc: "사실상 신바시를 첫 날로 선정한 이유는 이 가게를 가기 위해서라고 표현해도 과언이아니다. 하이엔드급은 아니지만 품질 좋은 재료와 고급진 요리를 가성비 좋게 맛볼 수 있다. 사시미와 텐뿌라 등 일본식(와식) 요리를 제공하고 그중에 가장 추천하는 것은 금눈돔(金目鯛) 조림인데, 한국에서는 하이엔드 일식집에서나 나오는 금눈돔을 약 20,000원에 맛볼 수 있다. 물론 맛도 보장되어있다. 이 가게는 신바시에서 워낙 유명해져서 신바시에만 약 6호점까지 생겼다. 총본점을 추천하지만 예약이 필요하기에, 갈 예정이라면 내가 미리 예약을 해놓도록하겠다.",
               },
               {
-                name: "신바시 우오킨2",
-                url: "https://www.google.com/",
-                desc: "신바시의 명물 일본식 이자카야",
+                name: "신바시 신시대(新時代)",
+                url: "https://www.google.com/search?q=%E6%96%B0%E6%A9%8B%20%E6%96%B0%E6%99%82%E4%BB%A3&rlz=1C5CHFA_enJP1000JP1000&oq=%E6%96%B0%E6%A9%8B%E3%80%80%E3%81%97%E3%82%93&aqs=chrome.1.69i57j0i4i30l6j0i4i5i30.8187j0j9&sourceid=chrome&ie=UTF-8&tbs=lf:1,lf_ui:4&tbm=lcl&sxsrf=ALiCzsZIOueAFqeVZolyRSFy3XntWlSWTQ:1669010697600&rflfq=1&num=10&rldimm=6032716961252708221&lqi=ChDmlrDmqYsg5paw5pmC5LujIgOIAQFIvrP1qJmugIAIWiUQARACGAAYARgCIhHmlrDmqYsg5pawIOaZguS7oyoCCAIyAmphkgEbamFwYW5lc2VfaXpha2F5YV9yZXN0YXVyYW50mgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVVJQZFdKcE1sbG5FQUWqARIQASoOIgrmlrAg5pmC5LujKAg&ved=2ahUKEwj9uYauzb77AhXsl1YBHe0zBr0QvS56BAgJEAE&sa=X&rlst=f#rlfi=hd:;si:6032716961252708221,l,ChDmlrDmqYsg5paw5pmC5LujIgOIAQFIvrP1qJmugIAIWiUQARACGAAYARgCIhHmlrDmqYsg5pawIOaZguS7oyoCCAIyAmphkgEbamFwYW5lc2VfaXpha2F5YV9yZXN0YXVyYW50mgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVVJQZFdKcE1sbG5FQUWqARIQASoOIgrmlrAg5pmC5LujKAg;mv:[[35.667899,139.7582142],[35.6649119,139.75818759999999]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!2m1!1e3!3sIAE,lf:1,lf_ui:4",
+                desc: "우오킨에서 1차를 가지고난 후, 2차로 가기에 적합한집. 이 집만의 특유의 야키토리인 덴쿠시 라는 닭껍질튀김 꼬치를 맛 볼 수있다. 메뉴 전체가 싼 가격으로 형성되어있기에 2차로 가기에 딱 좋다! 철로 밑에있는 가게라 특유의 분위기도 느낄 수 있다.",
               },
             ]}
             onClickNext={() => {
@@ -77,19 +76,14 @@ const Home: NextPage = () => {
           <Container
             w="left-ex6"
             h="top-ex24"
-            title="첫날 - 신바시"
-            desc="직장인들의 낙원"
-            image="/shinbashi_main.jpeg"
+            title="Day 2 - 아사쿠사"
+            desc="도쿄에서 가장 유명한 관광지 중에 하나인 아사쿠사. 이번년도의 운세를 뽑아보고, 근처에서 인력거를 탈 수도 있음. 바로 옆에는 도쿄에서 가장 높은 타워인 스카이트리도 위치해 있기에 같이 겸해서 관광 쌉가능."
+            image="/asakusa.jpeg"
             items={[
               {
-                name: "신바시 우오킨",
-                url: "https://www.google.com/",
-                desc: "신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야",
-              },
-              {
-                name: "신바시 우오킨2",
-                url: "https://www.google.com/",
-                desc: "신바시의 명물 일본식 이자카야",
+                name: "홋삐거리(ホッピー通り)",
+                url: "https://www.google.com/maps/place/%ED%98%B8%ED%94%BC+%EA%B1%B0%EB%A6%AC/@35.7139938,139.7919665,17z/data=!4m13!1m7!3m6!1s0x60188ec0629ee4a1:0x52da51a7e14656a2!2sHoppi+St,+Asakusa,+Taito+City,+Tokyo+111-0032!3b1!8m2!3d35.7139938!4d139.7941552!3m4!1s0x60188ec06698edbd:0xca44b46b180811d5!8m2!3d35.713662!4d139.7943186?hl=ko",
+                desc: "낮에는 가볍게 관광하고, 저녁에는 이제 아사쿠사 옆에있는 홋삐거리를 가야한다. 사실, 관광에는 별 관심없고 여기를 오기위해 아사쿠사에 간다. 홋삐라는 것은 술 이름인데 아마 한국에서는 맛 볼수없는 술이다. 한국 술로 비유하자면 소맥같은느낌의 술로 일본 소주에 홋삐라는 독특한 맛이나는 음료(?)를 섞는다. 이 거리의 모든 가게에서는 이 홋삐라는 술을 팔고있으며. 작은 가게들이 거리 양옆에 다닥다닥 붙어있어 술먹을 분위기로써 딱 좋다! 을지로같은느낌이랄까. 가게를 계속 바꿔가며 1차 2차 3차 4차 하기에 너무 좋다. 물론 홋삐는 소맥과같이 금방 훅갈 확률이 높으므로 잘 조절해가며 마셔야한다.",
               },
             ]}
             onClickNext={() => {
@@ -106,23 +100,25 @@ const Home: NextPage = () => {
           <Container
             w="left-ex32"
             h="top-ex26"
-            title="첫날 - 신바시"
-            desc="직장인들의 낙원"
-            image="/shinbashi_main.jpeg"
+            title="Day 3 - 우에노"
+            desc="우에노는 만약 봄에온다면 우에노 공원이라는 일본에서 손에꼽히는 벚꽃관광 명소에서 벚꽃을 볼 수 있다. 최근에는 코로나문제 때문에 벚꽃개화 기간에는 이 곳에서 술을 마시는걸 금하고 있지만. 원래는 한강마냥 돗자리 깔고 술판을 벌일 수 있었다. 봄이아닌 계절에온다면 아메요코(アメ横)만 보는 것을 추천. 아메요코는 사실 보러가는거라기보단 마시러 가는 곳이라 밑에 가게 추천에서 더 알아보도록하자."
+            image="/ueno.jpeg"
             items={[
               {
-                name: "신바시 우오킨",
-                url: "https://www.google.com/",
-                desc: "신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야 신바시의 명물 일본식 이자카야",
+                name: "아메요코 하마짱(浜ちゃん)",
+                url: "https://www.google.com/maps?q=%E4%B8%8A%E9%87%8E+%E6%B5%9C%E3%81%A1%E3%82%83%E3%82%93&rlz=1C5CHFA_enJP1000JP1000&sxsrf=ALiCzsbp5CK50kpDoZ2FxpBqlAYHAes8tw:1669012950475&uact=5&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzILCC4QgAQQxwEQrwEyBggAEAcQHjIGCAAQBxAeMgYIABAHEB4yBAgAEB4yBAgAEB4yCAgAEAgQBxAeMggIABAIEAcQHjIICAAQCBAHEB4yCggAEAgQBxAeEA86CggAEEcQ1gQQsAM6CAgAEAcQBBAeSgQIQRgASgQIRhgAUO8cWOcgYIklaAFwAXgAgAGNAogBmwaSAQUwLjIuMpgBAKABAcgBCsABAQ&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjsoYGM1r77AhXOiFYBHR9dBr0Q_AUoAXoECAMQAw",
+                desc: "아메요코는 그냥 술집이 존나게 많은 골목이다. 원래는 아메리카요코초 라고해서 미국 물품팔고 하는 골목이었는데 지금은 그냥 술마시러 가는 곳이다. 그중에 추천하는 가게는 하마짱(浜ちゃん)이라는 곳인데, 텐뿌라 전문점이다. 존나 싸고 맛좋고 배부르고! 한 집이다. 많은 종류의 텐뿌라를 싸게 맛 볼수 있는 곳. 취하기 딱좋다.",
               },
               {
-                name: "신바시 우오킨2",
-                url: "https://www.google.com/",
-                desc: "신바시의 명물 일본식 이자카야",
+                name: "아메요코 대통령(大統領)",
+                url: "https://www.google.com/maps/place/%EB%AA%A8%EC%B8%A0%EC%95%BC%ED%82%A4+%EB%8B%A4%EC%9D%B4%ED%86%A0%EB%A3%8C+%EB%B3%B8%EC%A0%90/@35.710371,139.7729091,17z/data=!4m10!1m2!2m1!1z5LiK6YeOIOWkp-e1semgmA!3m6!1s0x60188e9882eb388d:0xa520e94ee40763e4!8m2!3d35.7103644!4d139.7748694!15sChDkuIrph44g5aSn57Wx6aCYWhIiEOS4iumHjiDlpKfntbHpoJiSARtqYXBhbmVzZV9pemFrYXlhX3Jlc3RhdXJhbnSaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVTjFNVjkxWlVkM0VBReABAA!16s%2Fg%2F1tflxwyd",
+                desc: "하마짱 바로 옆에있는 가게인데, 야키토리 전문점이다. 사실상 이 아메요코에서 가장 유명한 집인데, 사람이 너무 많아서 나도 못가봤다. 평은 굉장히 좋은데 만약에 자리가 난다면 같이 가보고싶은 가게이다.",
               },
             ]}
             onClickNext={() => {
-              console.log("next");
+              move({ w: spacingConvert("ex20"), h: spacingConvert("ex36") });
+              setDirection("leftdown");
+              open();
             }}
             onClickPrev={() => {
               move({ w: spacingConvert("ex6"), h: spacingConvert("ex24") });
@@ -130,6 +126,75 @@ const Home: NextPage = () => {
               open();
             }}
           />
+          <Container
+            w="left-ex20"
+            h="top-ex36"
+            title="Day 4 - 아키하바라"
+            desc="아키하바라는 아는 사람은 알겠지만 일본 최대규모의 전자상가들이 즐비해있고, 또 세계 최대 규모의 애니메이션 성지이기도하다. 슈타인즈게이트의 배경지. 오타쿠의 성지. 길을 걷다보면 10미터당 메이드가 한명씩 배치되어있어 가게홍보를 한다. 관심있는사람은 방문해보는것도 좋을지도 모에모에큥."
+            image="/akihabara.jpeg"
+            items={[
+              {
+                name: "아키하바라 반카라",
+                url: "https://www.google.com/search?q=%E7%A7%8B%E8%91%89%E5%8E%9F+%E3%81%B0%E3%82%93%E3%81%8B%E3%82%89&rlz=1C5CHFA_enJP1000JP1000&biw=1280&bih=534&tbm=lcl&sxsrf=ALiCzsYf83byxsDFlBvknMuWahgQH2Tf-w%3A1669016923853&ei=Wy17Y5PLM4_N2roPkZSr4As&oq=%E7%A7%8B%E8%91%89%E5%8E%9F+%E3%83%90%E3%83%B3%E3%82%AB%E3%83%A9&gs_lcp=Cg1nd3Mtd2l6LWxvY2FsEAMYADIGCAAQBBAeMgYIABAEEB4yBggAEAQQHjIICAAQBBAeEA8yCAgAEAQQHhAPMggIABAEEB4QDzIICAAQCBAEEB4yCAgAEAgQBBAeMggIABAIEAQQHjIICAAQCBAEEB46BAgjECc6BAgAEB46BQgAEIAEOgQIABBDOgYIABAeEA86BggAEAgQHlCIBFi8KmClPWgAcAB4AoAB8AKIAbARkgEHMy42LjIuMpgBAKABAcABAQ&sclient=gws-wiz-local#rlfi=hd:;si:6466881286875810578,l,Chbnp4vokYnljp8g44Gw44KT44GL44KJIgOIAQFIsbjKj-aAgIAIWigQABABGAAYASIW56eL6JGJ5Y6fIOOBsOOCk-OBi-OCiSoGCAIQABABkgEQcmFtZW5fcmVzdGF1cmFudA;mv:[[35.70141657731903,139.77227862758434],[35.70105662268097,139.77183537241567]]",
+                desc: "아키하바라는 왜인지는 모르겠지만 맛있는 라멘가게가 많다. 오타쿠들이 많아서그런가(일본에서는 라멘을 좋아하는 사람은 돼지인 인식이있음.) 어쨌든 이 반카라 라는 가게는 조금 독특한 라멘을 파는데 카쿠니(角煮)를 넣은 국물이 아주 진한 라멘을 팔고있다. 카쿠니란 돼지고기를 아주 푹 조린 음식이다. 이 가게에서는 농후한 라멘을 맛볼 수 있다.",
+              },
+              {
+                name: "아키하바라 치바짱(ちばちゃん)",
+                url: "https://chibachan-chibafujimihonten.owst.jp/ko/",
+                desc: "이 가게는 아키하바라에만 있는 가게는 아니고 체인점인데, 개인적으로 소개하고싶은 가게여서 적음. 솔직히 아키하바라에서는 별로 먹거리가 없는듯. 이 가게는 특징이 존나게 많이나온다는건데 심지어 쌈 홈페이지의 사진을보면 확인할 수있지만 카라아게 특대사이즈가 14000원인데 진짜 존나게 많이나옴. 인스타 사진에 올리기 좋을 수도.",
+              },
+            ]}
+            onClickNext={() => {
+              move({ w: spacingConvert("ex42"), h: spacingConvert("ex42") });
+              setDirection("rightdown");
+              open();
+            }}
+            onClickPrev={() => {
+              move({ w: spacingConvert("ex32"), h: spacingConvert("ex26") });
+              setDirection("rightup");
+              open();
+            }}
+          />
+          <Container
+            w="left-ex42"
+            h="top-ex42"
+            title="Day 5 - 키타센쥬"
+            desc="키타센쥬는 관광지는 아니다. 하지만, 남들 다가는 관광지보다는 이런 외국인 별로없는 곳이 진짜 일본 분위기를 느낄 수 있을것이라고 생각한다. 키타센쥬는 시타마치(下町)라고 해서 좋은동네, 부자동네는 아니고 소시민이 사는 동네인데 그만큼 작은 골목골목 일본 소시민의 삶을 느낄 수있는 곳이다."
+            image="/kitasenju.jpeg"
+            items={[
+              {
+                name: "키타센쥬 텐시치",
+                url: "https://www.google.com/search?q=%E5%8C%97%E5%8D%83%E4%BD%8F%E3%80%80%E5%A4%A9%E4%B8%83&rlz=1C5CHFA_enJP1000JP1000&tbm=lcl&sxsrf=ALiCzsasCki16v9TYgakBicaeORCYJS6Hw%3A1669018195932&ei=UzJ7Y62iOOCC2roPj82g6As&ved=0ahUKEwjtl8Sl6b77AhVggVYBHY8mCL0Q4dUDCAk&uact=5&oq=%E5%8C%97%E5%8D%83%E4%BD%8F%E3%80%80%E5%A4%A9%E4%B8%83&gs_lcp=Cg1nd3Mtd2l6LWxvY2FsEAMyBAgAEB4yBAgAEB4yBAgAEB4yBAgAEB4yBAgAEB4yBAgAEB4yBggAEB4QDzIECAAQHjIGCAAQCBAeMgYIABAIEB46BAgjECc6BggAEAQQHjoKCAAQgAQQhwIQFDoFCAAQgAQ6CAgAEAQQHhAPOgYIABAeEA06CAgAEAgQHhANOggIABAeEA8QDToKCAAQBRAeEA8QDVDmBlilaWCZcGgFcAB4A4ABzQKIAZwtkgEIMi4xOC44LjKYAQCgAQHAAQE&sclient=gws-wiz-local#rlfi=hd:;si:5570624561415805490,l,ChLljJfljYPkvY_jgIDlpKnkuINIifuj3I-rgIAIWigQAhADGAAYARgCGAMiEuWMlyDljYPkvY8g5aSpIOS4gyoCCAIyAmphkgESc2tld2VyX2RlZXBfZnJ5aW5n,y,D550l3IhBt8;mv:[[35.74947637731903,139.8043459613329],[35.74911642268096,139.8039024386671]]",
+                desc: "여기는 가게 느낌이 존나 그냥 일본임. 구글 사진을 보면 바로 느낄수 있을것임. 이 곳의 특이한점은 서서먹는다는 것인데 일본에서는 타치노미, 타치쿠이(立ち飲み, 立ち食い) 라고한다 한국에는 없는 문화라 생소 할수도 있지만 나쁘지않음. 이 가게는 심야식당처럼 가운데에서 조리를하고 그곳을 빙 둘러 카운터테이블이 있어 테이블에 서서 조리하는사람이 주는대로 먹으면되는데, 맛도 괜찮고 무엇보다 분위기가 일본틱해서 괜찮다고 생각함. 이 가게는 내가 갔을때는 담배도 필 수 있었는데 지금은 어떨지 모르겠음.",
+              },
+              {
+                name: "소레유케 토리야로(それ行け鳥ヤロー!)",
+                url: "https://www.google.com/search?rlz=1C5CHFA_enJP1000JP1000&tbm=lcl&sxsrf=ALiCzsaIz2FsXQ_6yMtpq_fkW_MXM6HYbA:1669018602203&q=%E5%8C%97%E5%8D%83%E4%BD%8F%E3%81%9D%E3%82%8C%E3%82%86%E3%81%91&spell=1&sa=X&ved=2ahUKEwjHnKHn6r77AhXMBIgKHXfCACcQBSgAegQIAxAB&biw=1280&bih=534&dpr=2#rlfi=hd:;si:14410467958579602331,l,ChXljJfljYPkvY_jgZ3jgozjgobjgZFIhtaqjKmvgIAIWiEQAhgAGAEYAiIX5YyXIOWNg-S9jyDjgZ3jgozjgobjgZGSARtqYXBhbmVzZV9pemFrYXlhX3Jlc3RhdXJhbnQ,y,bS493n6rwfg;mv:[[35.749627677319026,139.80620836175444],[35.74926772268096,139.80576483824552]]",
+                desc: "이 가게도 체인점이기에 키타센쥬에만 있는 가게는 아니지만, 한번 다함께 가고싶었던 가게이다. 이 가게의 특이한점은 하이볼이 500원이란 점이다. 한국에서 기본 8000원이라 생각했을때 약 1/16의 가격이다. 이 가게에서 빠르게 취하고 키타센쥬 주변을 돌아다니며 이곳저곳 가게에 들어가면 좋을듯.",
+              },
+            ]}
+            onClickNext={() => {
+              move({ w: spacingConvert("ex8"), h: spacingConvert("ex40") });
+              setDirection("leftup");
+              open();
+            }}
+            onClickPrev={() => {
+              move({ w: spacingConvert("ex20"), h: spacingConvert("ex36") });
+              setDirection("leftup");
+              open();
+            }}
+          />
+          <div className="absolute left-ex8 top-ex40 h-screen w-screen p-10">
+            <div className="flex h-full items-center">
+              <p>
+                이외에도 많은 곳들이 있지만 너무많아서 생략하겠음. 좀 와라
+                도쿄에 개색기들아 무슨 동남아 후쿠오카 홋카이도 지랄말고! 같이
+                맛있는것도 좀 먹고! 놀고! 으이! 다하자고 이러다가 진짜 평생
+                안오겠어! 같이 시간맞춰서 몇박 오면 얼마나 좋니 기다리고
+                있는다...
+              </p>
+            </div>
+          </div>
         </div>
         <MoveSplash open={isVisible} direction={direction} />
       </div>

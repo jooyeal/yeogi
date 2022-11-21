@@ -4,6 +4,8 @@ module.exports = {
   theme: {
     extend: {
       width: {
+        screen6: "600vw",
+        screen5: "500vw",
         screen4: "400vw",
         screen3: "300vw",
         screen2: "300vw",
@@ -25,6 +27,8 @@ module.exports = {
         ex16: "72rem",
       },
       height: {
+        screen6: "600vh",
+        screen5: "500vh",
         screen4: "400vh",
         screen3: "300vh",
         screen2: "300vh",
@@ -84,6 +88,16 @@ module.exports = {
         ex30: "128rem",
         ex31: "132rem",
         ex32: "136rem",
+        ex33: "140rem",
+        ex34: "144rem",
+        ex35: "148rem",
+        ex36: "152rem",
+        ex37: "156rem",
+        ex38: "160rem",
+        ex39: "164rem",
+        ex40: "168rem",
+        ex41: "172rem",
+        ex42: "176rem",
       },
     },
     rotate: {

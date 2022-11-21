@@ -66,5 +66,25 @@ export default function (spacing: SpacingValue): number {
       return 2112;
     case "ex32":
       return 2176;
+    case "ex33":
+      return 2240;
+    case "ex34":
+      return 2304;
+    case "ex35":
+      return 2368;
+    case "ex36":
+      return 2432;
+    case "ex37":
+      return 2496;
+    case "ex38":
+      return 2560;
+    case "ex39":
+      return 2624;
+    case "ex40":
+      return 2688;
+    case "ex41":
+      return 2752;
+    case "ex42":
+      return 2816;
   }
 }
